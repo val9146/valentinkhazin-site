@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Val Khazin</title>
+  <meta name="description" content="I'm Val Khazin. A public page with plain-language notes on travel, everyday technology, food, and photographs, plus links to recent writing and profiles.">
+  <link rel="canonical" href="https://valentinkhazin.online/">
+  <link rel="icon" type="image/png" href="avatar.png">
+  <meta property="og:title" content="Val Khazin">
+  <meta property="og:description" content="I'm Val Khazin. A public page with plain-language notes on travel, everyday technology, food, and photographs, plus links to recent writing and profiles.">
+  <meta property="og:url" content="https://valentinkhazin.online/">
+  <meta property="og:image" content="https://valentinkhazin.online/avatar.png">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Val Khazin",
+    "url": "https://valentinkhazin.online/",
+    "image": "https://valentinkhazin.online/avatar.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/valkhazin/",
+      "https://medium.com/@valkhazin",
+      "https://about.me/valkhazin",
+      "https://x.com/valkhazin",
+      "https://www.quora.com/profile/Val-Khazin-1",
+      "https://www.pinterest.com/valkhazin/",
+      "https://valkhazin.substack.com",
+      "https://linktr.ee/valkhazin",
+      "https://valkhazin.tumblr.com",
+      "https://www.youtube.com/@valkhazin",
+      "https://www.flickr.com/photos/valkhazin/",
+      "https://gravatar.com/valkhazin",
+      "https://vimeo.com/valkhazin"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #385168;
+      --accent-hover: #24384a;
+      --border: #dde3ea;
+      --pill-bg: #f8fafc;
+      --pill-hover: #edf2f7;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(31, 41, 51, 0.05);
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .banner {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      background: #cbd5e1;
+    }
+
+    .identity {
+      display: flex;
+      align-items: flex-end;
+      gap: 18px;
+      padding: 0 32px;
+      margin-top: -54px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .avatar {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      border: 4px solid var(--surface);
+      background: var(--surface);
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 3px 12px rgba(31, 41, 51, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 1.9rem;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text);
+    }
+
+    main {
+      padding: 24px 32px 36px;
+    }
+
+    section + section {
+      margin-top: 32px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.15rem;
+      line-height: 1.3;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .bio p {
+      margin: 0 0 14px;
+      color: var(--text);
+    }
+
+    .bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    .writing-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .writing-list li {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .writing-list li:last-child {
+      border-bottom: none;
+    }
+
+    .writing-list a {
+      display: block;
+      padding: 12px 2px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .writing-list a:hover,
+    .writing-list a:focus-visible {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    .profile-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+      gap: 10px;
+    }
+
+    .profile-list a {
+      display: block;
+      padding: 10px 14px;
+      background: var(--pill-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .profile-list a:hover,
+    .profile-list a:focus-visible {
+      background: var(--pill-hover);
+      border-color: #bcc8d6;
+      color: var(--accent-hover);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 560px) {
+      body {
+        padding: 12px 10px 32px;
+      }
+
+      .banner {
+        height: 155px;
+      }
+
+      .identity {
+        padding: 0 20px;
+        margin-top: -44px;
+        gap: 14px;
+      }
+
+      .avatar {
+        width: 88px;
+        height: 88px;
+      }
+
+      h1 {
+        font-size: 1.55rem;
+        margin-bottom: 6px;
+      }
+
+      main {
+        padding: 20px 20px 28px;
+      }
+
+      .profile-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <img class="banner" src="banner.jpg" alt="Calm lake and hills at first light" width="1500" height="500">
+      <div class="identity">
+        <img class="avatar" src="avatar.png" alt="Abstract landscape mark for Val Khazin" width="108" height="108">
+        <h1>Val Khazin</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="bio" aria-label="About">
+        <p>I'm Val Khazin. This is a public page under my name, and a place to find writing published under that name.</p>
+        <p>The subjects are ordinary ones: travel, everyday technology, food, photographs, and other small practical topics. The notes are written in plain language and are meant to be useful without telling a life story. On travel, that includes packing a carry-on from a list written before the bag is open and closing it when the list is done, or walking the first hour in a new city with a simple map rather than opening five apps. On everyday technology, it means trying a tool you already have, such as a phone's offline notes app, before adding another. On photographs, it comes down to looking closely at a picture, stepping a little closer instead of zooming, and letting the edges of the frame cut away the clutter. On food, it means simple meals built from a few things that keep well: a grain, something fresh that does not bruise easily, and a flavor you already like.</p>
+        <p>I don't post a résumé here, and this page does not list a workplace or a location. If you searched the name, this is one of the public pages, and the writing is linked from here.</p>
+      </section>
+
+      <section aria-labelledby="recent-writing">
+        <h2 id="recent-writing">Recent writing</h2>
+        <ul class="writing-list">
+          <li><a href="https://medium.com/@valkhazin/a-simple-way-to-pack-a-carry-on-a26dedb675c8">A simple way to pack a carry-on</a></li>
+          <li><a href="https://medium.com/@valkhazin/how-val-khazin-looks-at-a-photograph-5ae8072586e7">How Val Khazin looks at a photograph</a></li>
+          <li><a href="https://medium.com/@valkhazin/a-slow-photo-walk-changes-how-you-see-a-place-f695a669bc74">A Slow Photo Walk Changes How You See a Place</a></li>
+          <li><a href="https://medium.com/@valkhazin/back-up-the-photos-on-your-phone-before-they-live-in-only-one-place-ab97fdf98d2d">Back Up the Photos on Your Phone Before They Live in Only One Place</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="find-me">
+        <h2 id="find-me">Find me</h2>
+        <ul class="profile-list">
+          <li><a href="https://www.linkedin.com/in/valkhazin/" rel="me">LinkedIn</a></li>
+          <li><a href="https://medium.com/@valkhazin" rel="me">Medium</a></li>
+          <li><a href="https://about.me/valkhazin" rel="me">About.me</a></li>
+          <li><a href="https://x.com/valkhazin" rel="me">X</a></li>
+          <li><a href="https://www.quora.com/profile/Val-Khazin-1" rel="me">Quora</a></li>
+          <li><a href="https://www.pinterest.com/valkhazin/" rel="me">Pinterest</a></li>
+          <li><a href="https://valkhazin.substack.com" rel="me">Substack</a></li>
+          <li><a href="https://linktr.ee/valkhazin" rel="me">Linktree</a></li>
+          <li><a href="https://valkhazin.tumblr.com" rel="me">Tumblr</a></li>
+          <li><a href="https://www.youtube.com/@valkhazin" rel="me">YouTube</a></li>
+          <li><a href="https://www.flickr.com/photos/valkhazin/" rel="me">Flickr</a></li>
+          <li><a href="https://gravatar.com/valkhazin" rel="me">Gravatar</a></li>
+          <li><a href="https://vimeo.com/valkhazin" rel="me">Vimeo</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
